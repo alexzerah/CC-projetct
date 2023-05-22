@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+li a  {
+  text-decoration: none;
+} 
+
+@font-face {
+  font-family: Avenir-Black;
+  src: url(Avenir-Black.woff);
+}
+
+@font-face {
+  font-family: Avenir-Light;
+  src: url(Avenir-Light.woff);
+}
+
+@font-face {
+  font-family: Avenir-Regular;
+  src: url(Avenir-Regular.woff);
+}
+
+@font-face {
+  font-family: Caramel-Regular;
+  src: url(Caramel-Regular.woff);
+}
+
+body {
+  background-color: #d9c7c2;
+ }
+
+header {
+  background-color: #2A2A2A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #logo {
+  align-self: flex-start;
+  background-color: purple;
+  width: 50px;
+  height: 50px;
+}
+
+#menu ul {
+  display: flex;
+  font-family: Avenir-Light;
+  
+}
+
+#menu ul li {
+  padding: 0 10px;
+}
+
+#menu ul a {
+  color: white;
+}
+
+body, html {
+  width: 100%;
+}
+
+/* CARDS */
+
+.cards {
+  position: relative;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 15px;
+  padding: 15px;
+  transform: translateY(-50%) translateX(-50%);
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.card:nth-child(1) {
+  background-color: #346A52;
+  color: #FFEBE4;
+  rotate: -10deg;
+  top: 30%;
+  left: 30%;
+  z-index: 1;
+}
+
+.card:nth-child(2) {
+  background-color: #97BDA6;
+  left: 100px;
+  rotate: -8deg;
+  top: 45%;
+  left: 40%;
+  z-index: 3;
+}
+
+.card:nth-child(3) {
+  background-color: #E0D3F1;
+  left: 200px;
+  rotate: 5deg;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+}
+
+.card:nth-child(4) {
+  background-color: #F9D75B;
+  left: 300px;
+  rotate: -5deg;
+  top: 35%;
+  left: 55%;
+  z-index: 4;
+}
+
+.card:nth-child(5) {
+  background-color: #FF7E22;
+  left: 400px;
+  rotate: -15deg;
+  top: 35%;
+  left: 70%;
+  z-index: 5;
+}
+
+.card .subtitle {
+  font-family: Avenir-Light;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card .title {
+  font-family: Avenir-Light;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Titles */
+
+h1 {
+  font-family: Avenir-Black;
+  font-size: 40px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  position: absolute;
+  bottom: 0;
+  color: #FF7E22;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  bottom: 50px;
+  font-size: 7rem;
+  font-family: Caramel-Regular;
+  text-transform: uppercase;
+}
+
+.lessVisible {
+  opacity: 0.2;
+}
+
+.isActive {
+  opacity: 1;
+  width: 400px;
+  height: 400px;
+  z-index: 10 !important;
+}
